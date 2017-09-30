@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+	<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body >
+	
+<nav class="navbar navbar-default navbar-inverse">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="home" class="navbar-brand"><i class="glyphicon glyphicon-home"></i></a>
+					<a href="pages/annonceurs.html" class="navbar-brand">Annonceurs</a>
+					<a href="pages/evenement.html" class="navbar-brand">Evénements</a>
+					
+				</div>
+				
+				<form method='GET' action='?p=home'class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" name='search' class="form-control" placeholder="Search">
+					</div>
+					<button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search
+						"></i></button>
+					</form>
+				</div>
+			</nav>
+
+
+<div class="input-prepend" >
+    <span class="add-on"><i class="icon-music"></i></span>
+    <input type="text" placeholder="Style musical" class="input-large" id="menu-deroulant-style">
+</div>
+   
+   
+  <div id="menu-deroulant-style-on">
+    <label for="checkbox1">Option 1 </label><input type="checkbox" name="checkbox1" id="checkbox1" value="1"/><br />
+    <label for="checkbox2">Option 2 </label><input type="checkbox" name="checkbox2" id="checkbox2" value="2"/><br />
+    <label for="checkbox3">Option 3 </label><input type="checkbox" name="checkbox3" id="checkbox3" value="3"/>
+     
+    <button type="submit" class="btn btn-primary" id="bouton-valid-style">OK</button>
+     
+</div>
+
+
+
+	
+
+<script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
